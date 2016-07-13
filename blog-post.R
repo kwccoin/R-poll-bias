@@ -6,10 +6,18 @@
 #
 # not plot when run
 #
-#install.packages(c('zoo', 'plotrix'))
+# install.packages(c('zoo', 'plotrix'))
 #
 # I used the following margins for the graphs
 # par(mar=c(4,2.3,2,0))
+
+# need to select it or all first 
+
+# setwd("/Volumes/osx-int/kwccoin-git/R-poll-bias/")
+
+# source("/Volumes/osx-int/kwccoin-git/R-poll-bias/blog-post.R")
+
+print("--- start blog-post.R ---")
 
 library(plotrix)
 library(zoo)
@@ -18,6 +26,8 @@ source("inc/plot_polls.R")
 
 # load poll data from CSV
 polls <- load_polls('polls.csv')
+
+head(polls)
 
 # plot all polls in one graph
 plot_polls(polls, "All institutes, all parties")
@@ -59,3 +69,5 @@ plot(simpleMed$date, simpleMed$value, type='l', frame=F, xlab='', cex.axis=0.8, 
      main='Comparison of different quarterly medians for SPD',
      sub='black = simple median, red = mean of median per institute')
 lines(betterMed$date, betterMed$value, col='red')
+
+print("=== end blog-post.R ===")
