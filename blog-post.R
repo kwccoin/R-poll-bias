@@ -17,6 +17,8 @@
 
 # source("/Volumes/osx-int/kwccoin-git/R-poll-bias/blog-post.R")
 
+# test
+
 print("--- start blog-post.R ---")
 
 library(plotrix)
