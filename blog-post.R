@@ -2,7 +2,11 @@
 # note: you may need to install the used libraries first
 # to do so just run:
 #
-# install.packages(c('zoo', 'plotrix'))
+# need to learn how to commit and also how to creat and use R project
+#
+# not plot when run
+#
+#install.packages(c('zoo', 'plotrix'))
 #
 # I used the following margins for the graphs
 # par(mar=c(4,2.3,2,0))
